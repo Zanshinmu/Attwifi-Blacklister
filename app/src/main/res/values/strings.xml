@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Attwifi Blacklister</string>
+    <string name="description">Disable ATTWIFI hotspot: will not connect ever</string>
+    <string name="description_disabled">Enable ATTWIFI hotspot: will connect automatically</string>
+    <string name="blacklisted">ATTWIFI hotspot blacklisted</string>
+    <string name="restored">ATTWIFI hotspot restored</string>
+    <string name="general">Settings</string>
+    <string name="no_attwifi_found">No ATTWIFI hotspot found. You don\'t need this app!</string>
+    <string name="support_title">Email Support</string>
+    <string name="support_summary">Tap to email support</string>
+    <string name="copyright_title">(c) 2014 David Van de Ven</string>
+    <string name="copyright_summary">Tap to open license in browser</string>
+    <string name="blacklist_title">Blacklist Attwifi Hotspot</string>
+</resources>

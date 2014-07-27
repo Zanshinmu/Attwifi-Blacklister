@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+            android:key="BLACKLISTED"
+            android:title="@string/blacklist_title"
+            android:summaryOff="@string/description"
+            android:summaryOn="@string/description_disabled"
+            android:defaultValue="false"/>
+
+    <PreferenceScreen
+            android:selectable="false"
+            >
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/support_title"
+            android:summary="@string/support_summary"
+            >
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:zanshin.g1@gmail.com?subject=Attwifi Blacklist Support">
+        </intent>
+
+    </PreferenceScreen>
+    <PreferenceScreen
+            android:title="@string/copyright_title"
+            android:summary="@string/copyright_summary">
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.gnu.org/licenses/gpl-3.0.txt">
+        </intent>
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.wahtod.attwifiblacklister"
+          android:installLocation="internalOnly"
+          android:versionCode="2"
+          android:versionName="0.90">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <uses-sdk
+            android:maxSdkVersion="19"
+            android:minSdkVersion="7"
+            android:targetSdkVersion="19"/>
+
+    <application
+            android:allowBackup="true"
+            android:description="@string/description"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".SettingsActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name=".ScanReceiver"
+                android:exported="true"
+                android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name=".AttBlacklisterService"
+                android:enabled="true"
+                android:exported="false">
+        </service>
+    </application>
+
+</manifest>
